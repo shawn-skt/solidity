@@ -1,0 +1,338 @@
+Performing configuration checks
+
+    - default address-model    : none (cached)
+    - default architecture     : none (cached)
+    - symlinks supported       : yes (cached)
+    - has_icu builds           : no  (cached)
+    - lockfree boost::atomic_flag : no  (cached)
+
+Component configuration:
+
+    - atomic                   : not building
+    - chrono                   : building
+    - container                : not building
+    - context                  : not building
+    - contract                 : not building
+    - coroutine                : not building
+    - date_time                : building
+    - exception                : not building
+    - fiber                    : not building
+    - filesystem               : building
+    - graph                    : not building
+    - graph_parallel           : not building
+    - iostreams                : not building
+    - locale                   : not building
+    - log                      : not building
+    - math                     : not building
+    - mpi                      : not building
+    - program_options          : building
+    - python                   : not building
+    - random                   : building
+    - regex                    : building
+    - serialization            : not building
+    - signals                  : not building
+    - stacktrace               : not building
+    - system                   : building
+    - test                     : not building
+    - thread                   : building
+    - timer                    : not building
+    - type_erasure             : not building
+    - wave                     : not building
+
+...patience...
+...patience...
+...found 1805 targets...
+...updating 75 targets...
+darwin.compile.c++ bin.v2/libs/system/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/error_code.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.archive bin.v2/libs/system/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/libboost_system.a
+common.copy stage/lib/libboost_system.a
+darwin.compile.c++ bin.v2/libs/chrono/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/chrono.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/chrono/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/thread_clock.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/chrono/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/process_cpu_clocks.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.archive bin.v2/libs/chrono/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/libboost_chrono.a
+common.copy stage/lib/libboost_chrono.a
+darwin.compile.c++ bin.v2/libs/date_time/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/gregorian/greg_month.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/date_time/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/gregorian/greg_weekday.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/date_time/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/gregorian/date_generators.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.archive bin.v2/libs/date_time/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/libboost_date_time.a
+common.copy stage/lib/libboost_date_time.a
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/codecvt_error_category.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/operations.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/path.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/path_traits.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/portability.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/unique_path.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/utf8_codecvt_facet.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/filesystem/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/windows_file_codecvt.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.archive bin.v2/libs/filesystem/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/libboost_filesystem.a
+common.copy stage/lib/libboost_filesystem.a
+darwin.compile.c++ bin.v2/libs/program_options/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/cmdline.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/program_options/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/config_file.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/program_options/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/options_description.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/program_options/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/parsers.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/program_options/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/variables_map.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/program_options/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/value_semantic.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/program_options/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/positional_options.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/program_options/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/utf8_codecvt_facet.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/program_options/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/convert.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/program_options/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/winmain.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/program_options/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/split.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.archive bin.v2/libs/program_options/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/libboost_program_options.a
+common.copy stage/lib/libboost_program_options.a
+darwin.compile.c++ bin.v2/libs/random/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/random_device.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.archive bin.v2/libs/random/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/libboost_random.a
+common.copy stage/lib/libboost_random.a
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/c_regex_traits.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+In file included from libs/regex/build/../src/c_regex_traits.cpp:28:
+In file included from ./boost/regex/v4/c_regex_traits.hpp:26:
+In file included from ./boost/regex/v4/regex_workaround.hpp:44:
+In file included from ./boost/shared_ptr.hpp:17:
+In file included from ./boost/smart_ptr/shared_ptr.hpp:28:
+In file included from ./boost/smart_ptr/detail/shared_count.hpp:29:
+In file included from ./boost/smart_ptr/detail/sp_counted_base.hpp:45:
+./boost/smart_ptr/detail/sp_counted_base_clang.hpp:27:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+typedef _Atomic( boost::int_least32_t ) atomic_int_least32_t;
+        ^
+2 warnings generated.
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/cpp_regex_traits.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+In file included from libs/regex/build/../src/cpp_regex_traits.cpp:22:
+In file included from ./boost/regex/regex_traits.hpp:27:
+In file included from ./boost/regex/v4/regex_traits.hpp:26:
+In file included from ./boost/regex/v4/regex_workaround.hpp:44:
+In file included from ./boost/shared_ptr.hpp:17:
+In file included from ./boost/smart_ptr/shared_ptr.hpp:28:
+In file included from ./boost/smart_ptr/detail/shared_count.hpp:29:
+In file included from ./boost/smart_ptr/detail/sp_counted_base.hpp:45:
+./boost/smart_ptr/detail/sp_counted_base_clang.hpp:27:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+typedef _Atomic( boost::int_least32_t ) atomic_int_least32_t;
+        ^
+2 warnings generated.
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/cregex.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+In file included from libs/regex/build/../src/cregex.cpp:22:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:32:
+In file included from ./boost/regex/v4/regex_workaround.hpp:44:
+In file included from ./boost/shared_ptr.hpp:17:
+In file included from ./boost/smart_ptr/shared_ptr.hpp:28:
+In file included from ./boost/smart_ptr/detail/shared_count.hpp:29:
+In file included from ./boost/smart_ptr/detail/sp_counted_base.hpp:45:
+./boost/smart_ptr/detail/sp_counted_base_clang.hpp:27:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+typedef _Atomic( boost::int_least32_t ) atomic_int_least32_t;
+        ^
+2 warnings generated.
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/fileiter.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+In file included from libs/regex/build/../src/fileiter.cpp:28:
+In file included from ./boost/regex/v4/regex_workaround.hpp:44:
+In file included from ./boost/shared_ptr.hpp:17:
+In file included from ./boost/smart_ptr/shared_ptr.hpp:28:
+In file included from ./boost/smart_ptr/detail/shared_count.hpp:29:
+In file included from ./boost/smart_ptr/detail/sp_counted_base.hpp:45:
+./boost/smart_ptr/detail/sp_counted_base_clang.hpp:27:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+typedef _Atomic( boost::int_least32_t ) atomic_int_least32_t;
+        ^
+2 warnings generated.
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/icu.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/instances.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+In file included from libs/regex/build/../src/instances.cpp:30:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:32:
+In file included from ./boost/regex/v4/regex_workaround.hpp:44:
+In file included from ./boost/shared_ptr.hpp:17:
+In file included from ./boost/smart_ptr/shared_ptr.hpp:28:
+In file included from ./boost/smart_ptr/detail/shared_count.hpp:29:
+In file included from ./boost/smart_ptr/detail/sp_counted_base.hpp:45:
+./boost/smart_ptr/detail/sp_counted_base_clang.hpp:27:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+typedef _Atomic( boost::int_least32_t ) atomic_int_least32_t;
+        ^
+2 warnings generated.
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/posix_api.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+In file included from libs/regex/build/../src/posix_api.cpp:23:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:32:
+In file included from ./boost/regex/v4/regex_workaround.hpp:44:
+In file included from ./boost/shared_ptr.hpp:17:
+In file included from ./boost/smart_ptr/shared_ptr.hpp:28:
+In file included from ./boost/smart_ptr/detail/shared_count.hpp:29:
+In file included from ./boost/smart_ptr/detail/sp_counted_base.hpp:45:
+./boost/smart_ptr/detail/sp_counted_base_clang.hpp:27:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+typedef _Atomic( boost::int_least32_t ) atomic_int_least32_t;
+        ^
+2 warnings generated.
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/regex.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+In file included from libs/regex/build/../src/regex.cpp:24:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:32:
+In file included from ./boost/regex/v4/regex_workaround.hpp:44:
+In file included from ./boost/shared_ptr.hpp:17:
+In file included from ./boost/smart_ptr/shared_ptr.hpp:28:
+In file included from ./boost/smart_ptr/detail/shared_count.hpp:29:
+In file included from ./boost/smart_ptr/detail/sp_counted_base.hpp:45:
+./boost/smart_ptr/detail/sp_counted_base_clang.hpp:27:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+typedef _Atomic( boost::int_least32_t ) atomic_int_least32_t;
+        ^
+2 warnings generated.
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/regex_debug.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/regex_raw_buffer.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/regex_traits_defaults.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+In file included from libs/regex/build/../src/regex_traits_defaults.cpp:20:
+In file included from ./boost/regex/regex_traits.hpp:27:
+In file included from ./boost/regex/v4/regex_traits.hpp:26:
+In file included from ./boost/regex/v4/regex_workaround.hpp:44:
+In file included from ./boost/shared_ptr.hpp:17:
+In file included from ./boost/smart_ptr/shared_ptr.hpp:28:
+In file included from ./boost/smart_ptr/detail/shared_count.hpp:29:
+In file included from ./boost/smart_ptr/detail/sp_counted_base.hpp:45:
+./boost/smart_ptr/detail/sp_counted_base_clang.hpp:27:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+typedef _Atomic( boost::int_least32_t ) atomic_int_least32_t;
+        ^
+2 warnings generated.
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/static_mutex.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/w32_regex_traits.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/wc_regex_traits.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+In file included from libs/regex/build/../src/wc_regex_traits.cpp:76:
+In file included from ./boost/regex/v4/c_regex_traits.hpp:26:
+In file included from ./boost/regex/v4/regex_workaround.hpp:44:
+In file included from ./boost/shared_ptr.hpp:17:
+In file included from ./boost/smart_ptr/shared_ptr.hpp:28:
+In file included from ./boost/smart_ptr/detail/shared_count.hpp:29:
+In file included from ./boost/smart_ptr/detail/sp_counted_base.hpp:45:
+./boost/smart_ptr/detail/sp_counted_base_clang.hpp:27:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+typedef _Atomic( boost::int_least32_t ) atomic_int_least32_t;
+        ^
+2 warnings generated.
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/wide_posix_api.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+In file included from libs/regex/build/../src/wide_posix_api.cpp:25:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:32:
+In file included from ./boost/regex/v4/regex_workaround.hpp:44:
+In file included from ./boost/shared_ptr.hpp:17:
+In file included from ./boost/smart_ptr/shared_ptr.hpp:28:
+In file included from ./boost/smart_ptr/detail/shared_count.hpp:29:
+In file included from ./boost/smart_ptr/detail/sp_counted_base.hpp:45:
+./boost/smart_ptr/detail/sp_counted_base_clang.hpp:27:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+typedef _Atomic( boost::int_least32_t ) atomic_int_least32_t;
+        ^
+2 warnings generated.
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/winstances.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+In file included from libs/regex/build/../src/winstances.cpp:30:
+In file included from ./boost/regex.hpp:31:
+In file included from ./boost/regex/v4/regex.hpp:32:
+In file included from ./boost/regex/v4/regex_workaround.hpp:44:
+In file included from ./boost/shared_ptr.hpp:17:
+In file included from ./boost/smart_ptr/shared_ptr.hpp:28:
+In file included from ./boost/smart_ptr/detail/shared_count.hpp:29:
+In file included from ./boost/smart_ptr/detail/sp_counted_base.hpp:45:
+./boost/smart_ptr/detail/sp_counted_base_clang.hpp:27:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+typedef _Atomic( boost::int_least32_t ) atomic_int_least32_t;
+        ^
+2 warnings generated.
+darwin.compile.c++ bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/usinstances.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.archive bin.v2/libs/regex/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/libboost_regex.a
+common.copy stage/lib/libboost_regex.a
+darwin.compile.c++ bin.v2/libs/atomic/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/lockpool.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.archive bin.v2/libs/atomic/build/darwin-13.0.0/release/address-model-64/link-static/threading-multi/libboost_atomic.a
+common.copy stage/lib/libboost_atomic.a
+darwin.compile.c++ bin.v2/libs/thread/build/darwin-13.0.0/release/address-model-64/link-static/threadapi-pthread/threading-multi/pthread/thread.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+In file included from libs/thread/src/pthread/thread.cpp:11:
+In file included from ./boost/thread/thread_only.hpp:17:
+In file included from ./boost/thread/pthread/thread_data.hpp:12:
+In file included from ./boost/thread/lock_types.hpp:18:
+In file included from ./boost/thread/thread_time.hpp:9:
+In file included from ./boost/date_time/time_clock.hpp:17:
+In file included from ./boost/shared_ptr.hpp:17:
+In file included from ./boost/smart_ptr/shared_ptr.hpp:28:
+In file included from ./boost/smart_ptr/detail/shared_count.hpp:29:
+In file included from ./boost/smart_ptr/detail/sp_counted_base.hpp:45:
+./boost/smart_ptr/detail/sp_counted_base_clang.hpp:27:9: warning: '_Atomic' is a C11 extension [-Wc11-extensions]
+typedef _Atomic( boost::int_least32_t ) atomic_int_least32_t;
+        ^
+2 warnings generated.
+darwin.compile.c++ bin.v2/libs/thread/build/darwin-13.0.0/release/address-model-64/link-static/threadapi-pthread/threading-multi/pthread/once.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.compile.c++ bin.v2/libs/thread/build/darwin-13.0.0/release/address-model-64/link-static/threadapi-pthread/threading-multi/future.o
+warning: unknown warning option '-Wno-long-double'; did you mean '-Wno-long-long'? [-Wunknown-warning-option]
+1 warning generated.
+darwin.archive bin.v2/libs/thread/build/darwin-13.0.0/release/address-model-64/link-static/threadapi-pthread/threading-multi/libboost_thread.a
+common.copy stage/lib/libboost_thread.a
+...updated 75 targets...

@@ -45,6 +45,7 @@ include(fmtlib)
 include(jsoncpp)
 include(range-v3)
 include_directories(SYSTEM ${JSONCPP_INCLUDE_DIR})
+include(ProjectBoost)
 
 find_package(Threads)
 
@@ -65,7 +66,7 @@ configure_file("${CMAKE_SOURCE_DIR}/cmake/templates/license.h.in" include/licens
 
 include(EthOptions)
 configure_project(TESTS)
-set(LATEST_Z3_VERSION "4.8.12")
+set(LATEST_Z3_VERSION "4.8.13")
 set(MINIMUM_Z3_VERSION "4.8.0")
 find_package(Z3)
 if (${Z3_FOUND})
@@ -130,7 +131,9 @@ add_subdirectory(libevmasm)
 add_subdirectory(libyul)
 add_subdirectory(libsolidity)
 add_subdirectory(libsolc)
-add_subdirectory(tools)
+if (TOOLS)
+  add_subdirectory(tools)
+endif()
 
 if (NOT EMSCRIPTEN)
 	add_subdirectory(solc)
