@@ -14,7 +14,7 @@
 /**
  * @file: sm3.cpp
  * @author: websterchen
- * 
+ *
  * @date: 2018
  */
 #include <string.h>
@@ -100,18 +100,18 @@ static void sm3_process(sm3_context *ctx, unsigned char data[64])
 	GET_ULONG_BE(W[15], data, 60);
 
 
-#define FF0(x,y,z) ( (x) ^ (y) ^ (z)) 
+#define FF0(x,y,z) ( (x) ^ (y) ^ (z))
 #define FF1(x,y,z) (((x) & (y)) | ( (x) & (z)) | ( (y) & (z)))
 
-#define GG0(x,y,z) ( (x) ^ (y) ^ (z)) 
+#define GG0(x,y,z) ( (x) ^ (y) ^ (z))
 #define GG1(x,y,z) (((x) & (y)) | ( (~(x)) & (z)) )
 
 
 #define  SHL(x,n) (((x) & 0xFFFFFFFF) << n%32)
 #define ROTL(x,n) (SHL((x),n) | ((x) >> (32 - n%32)))
 
-#define P0(x) ((x) ^  ROTL((x),9) ^ ROTL((x),17)) 
-#define P1(x) ((x) ^  ROTL((x),15) ^ ROTL((x),23)) 
+#define P0(x) ((x) ^  ROTL((x),9) ^ ROTL((x),17))
+#define P1(x) ((x) ^  ROTL((x),15) ^ ROTL((x),23))
 
 	for (j = 16; j < 68; j++)
 	{

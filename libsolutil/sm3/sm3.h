@@ -14,7 +14,7 @@
 /**
  * @file: sm3.h
  * @author: websterchen
- * 
+ *
  * @date: 2018
  */
 #ifndef SM3_H
@@ -52,4 +52,4 @@ extern "C" {
 }
 #endif
 
-#endif /* sm3.h */ 
+#endif /* sm3.h */
