@@ -9,7 +9,7 @@ macro(configure_project)
 	eth_default_option(OSSFUZZ OFF)
 
 	# guomi
-	eth_default_option(BUILD_GM ON)
+	eth_default_option(BUILD_GM OFF)
 	if (BUILD_GM)
         add_definitions(-DFISCO_GM)
     endif()
