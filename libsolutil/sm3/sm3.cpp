@@ -14,7 +14,7 @@
 /**
  * @file: sm3.cpp
  * @author: websterchen
- * 
+ *
  * @date: 2018
  */
 #include <string.h>
@@ -66,10 +66,10 @@ void sm3_starts(sm3_context *ctx)
 
 static void sm3_process(sm3_context *ctx, unsigned char data[64])
 {
-	unsigned int SS1, SS2, TT1, TT2, W[68], W1[64];
-	unsigned int A, B, C, D, E, F, G, H;
+	unsigned long SS1, SS2, TT1, TT2, W[68], W1[64];
+	unsigned long A, B, C, D, E, F, G, H;
 	unsigned int T[64];
-	unsigned int Temp1, Temp2, Temp3, Temp4, Temp5;
+	unsigned long Temp1, Temp2, Temp3, Temp4, Temp5;
 	int j;
 
 	// 	for(j=0; j < 68; j++)
@@ -100,18 +100,18 @@ static void sm3_process(sm3_context *ctx, unsigned char data[64])
 	GET_ULONG_BE(W[15], data, 60);
 
 
-#define FF0(x,y,z) ( (x) ^ (y) ^ (z)) 
+#define FF0(x,y,z) ( (x) ^ (y) ^ (z))
 #define FF1(x,y,z) (((x) & (y)) | ( (x) & (z)) | ( (y) & (z)))
 
-#define GG0(x,y,z) ( (x) ^ (y) ^ (z)) 
+#define GG0(x,y,z) ( (x) ^ (y) ^ (z))
 #define GG1(x,y,z) (((x) & (y)) | ( (~(x)) & (z)) )
 
 
 #define  SHL(x,n) (((x) & 0xFFFFFFFF) << n%32)
 #define ROTL(x,n) (SHL((x),n) | ((x) >> (32 - n%32)))
 
-#define P0(x) ((x) ^  ROTL((x),9) ^ ROTL((x),17)) 
-#define P1(x) ((x) ^  ROTL((x),15) ^ ROTL((x),23)) 
+#define P0(x) ((x) ^  ROTL((x),9) ^ ROTL((x),17))
+#define P1(x) ((x) ^  ROTL((x),15) ^ ROTL((x),23))
 
 	for (j = 16; j < 68; j++)
 	{
@@ -188,9 +188,9 @@ static void sm3_process(sm3_context *ctx, unsigned char data[64])
 /*
 * SM3 process buffer
 */
-void sm3_update(sm3_context *ctx, unsigned char *input, int ilen)
+void sm3_update(sm3_context *ctx, unsigned char *input, unsigned long ilen)
 {
-	int fill;
+	unsigned long fill;
 	unsigned int left;
 
 	if (ilen <= 0)
@@ -242,8 +242,8 @@ static const unsigned char sm3_padding[64] =
 */
 void sm3_finish(sm3_context *ctx, unsigned char output[32])
 {
-	unsigned int last, padn;
-	unsigned int high, low;
+	unsigned long last, padn;
+	unsigned long high, low;
 	unsigned char msglen[8];
 
 	high = (ctx->total[0] >> 29)
@@ -270,7 +270,7 @@ void sm3_finish(sm3_context *ctx, unsigned char output[32])
 }
 
 
-void SM3(unsigned char *input, int ilen,
+void SM3(unsigned char *input, unsigned long ilen,
 	unsigned char output[32])
 {
 	sm3_context ctx;

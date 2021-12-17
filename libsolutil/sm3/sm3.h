@@ -14,7 +14,7 @@
 /**
  * @file: sm3.h
  * @author: websterchen
- * 
+ *
  * @date: 2018
  */
 #ifndef SM3_H
@@ -42,14 +42,14 @@ extern "C" {
 
 	void sm3_starts(sm3_context *ctx);
 
-	void sm3_update(sm3_context *ctx, unsigned char *input, int ilen);
+	void sm3_update(sm3_context *ctx, unsigned char *input, unsigned long ilen);
 
 	void sm3_finish(sm3_context *ctx, unsigned char output[32]);
 
-	void SM3(unsigned char *input, int ilen,
+	void SM3(unsigned char *input, unsigned long ilen,
 		unsigned char output[32]);
 #ifdef __cplusplus
 }
 #endif
 
-#endif /* sm3.h */ 
+#endif /* sm3.h */
