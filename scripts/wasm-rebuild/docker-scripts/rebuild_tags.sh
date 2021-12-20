@@ -239,4 +239,6 @@ cd /src
 TAGS=$(git tag --list "${TAG_FILTER}" | tac)
 for TAG in ${TAGS}; do
   process_tag "${TAG}"
+  echo "${TAG}"
 done
+echo "done"
