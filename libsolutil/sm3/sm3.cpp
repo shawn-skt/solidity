@@ -134,14 +134,14 @@ static void sm3_process(sm3_context *ctx, unsigned char data[64])
 	}
 
 
-	A = (unsigned int) ctx->state[0];
-	B = (unsigned int) ctx->state[1];
-	C = (unsigned int) ctx->state[2];
-	D = (unsigned int) ctx->state[3];
-	E = (unsigned int) ctx->state[4];
-	F = (unsigned int) ctx->state[5];
-	G = (unsigned int) ctx->state[6];
-	H = (unsigned int) ctx->state[7];
+	A = ctx->state[0];
+	B = ctx->state[1];
+	C = ctx->state[2];
+	D = ctx->state[3];
+	E = ctx->state[4];
+	F = ctx->state[5];
+	G = ctx->state[6];
+	H = ctx->state[7];
 
 	for (j = 0; j < 16; j++)
 	{
@@ -199,7 +199,7 @@ void sm3_update(sm3_context *ctx, unsigned char *input, int ilen)
 	left = ctx->total[0] & 0x3F;
 	fill = (int) (64 - left);
 
-	ctx->total[0] += (unsigned long) ilen;
+	ctx->total[0] += (unsigned int) ilen;
 	ctx->total[0] &= 0xFFFFFFFF;
 
 	if (ctx->total[0] < (unsigned int)ilen)
@@ -246,9 +246,9 @@ void sm3_finish(sm3_context *ctx, unsigned char output[32])
 	unsigned int high, low;
 	unsigned char msglen[8];
 
-	high = (unsigned int) ((ctx->total[0] >> 29)
-		| (ctx->total[1] << 3));
-	low = (unsigned int) ((ctx->total[0] << 3));
+	high = (ctx->total[0] >> 29)
+		| (ctx->total[1] << 3);
+	low = (ctx->total[0] << 3);
 
 	PUT_ULONG_BE(high, msglen, 0);
 	PUT_ULONG_BE(low, msglen, 4);
