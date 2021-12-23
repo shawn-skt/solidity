@@ -6,6 +6,10 @@ if (WIN32)
     set(BOOST_BOOTSTRAP_COMMAND bootstrap.bat)
     set(BOOST_BUILD_TOOL b2.exe)
     set(BOOST_LIBRARY_SUFFIX -vc141-mt-x64-1_68.lib)
+elseif(EMSCRIPTEN)
+    set(BOOST_BOOTSTRAP_COMMAND ./bootstrap.sh)
+    set(BOOST_BUILD_TOOL ./b2 toolset=emscripten)
+    set(BOOST_LIBRARY_SUFFIX .bc)
 else()
     set(BOOST_BOOTSTRAP_COMMAND ./bootstrap.sh)
     set(BOOST_BUILD_TOOL ./b2)
@@ -38,6 +42,7 @@ ExternalProject_Add(boost
         link=static
         variant=release
         address-model=64
+        --disable-icu
         --with-thread
         --with-date_time
         --with-system
